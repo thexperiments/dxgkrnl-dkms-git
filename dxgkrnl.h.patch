@@ -1,0 +1,14 @@
+--- original
++++ modified
+@@ -992,6 +992,11 @@
+ void signal_host_cpu_event(struct dxghostevent *eventhdr);
+ int ntstatus2int(struct ntstatus status);
+ 
++static inline int uuid_le_cmp(const guid_t u1, const guid_t u2)
++{
++	return memcmp(&u1, &u2, sizeof(guid_t));
++}
++
+ #ifdef DEBUG
+ 
+ void dxgk_validate_ioctls(void);

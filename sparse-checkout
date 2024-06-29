@@ -1,0 +1,3 @@
+drivers/hv/dxgkrnl
+include/uapi/misc
+include/linux/hyperv.h
