@@ -1,0 +1,19 @@
+pkgbase = dxgkrnl-dkms-git
+	pkgdesc = Package that compiles the microsoft dxgkrnl driver from WSL Kernel for using partitioned GPUs from hyperV
+	pkgver = 0.0.1
+	pkgrel = 1
+	url = https://github.com/thexperiments/dxgkrnl-dkms-git
+	install = dxgkrnl.install
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	makedepends = linux-headers
+	depends = dkms
+	source = sparse-checkout
+	source = dxgkrnl.h.patch
+	source = dxgmodule.c.patch
+	sha256sums = 45f223292bb19819ff2074d96f8111817afbe6423ddd47976d7085c1cabb0572
+	sha256sums = b77aea6da2f8223b4dd847fe569c34275fce04a87140f95b3d7317596f812699
+	sha256sums = ed4b138464c991b55437f5168e986a46aef4bef42ee87530815a97488149e4d7
+
+pkgname = dxgkrnl-dkms-git
